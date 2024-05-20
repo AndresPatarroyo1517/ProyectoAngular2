@@ -23,6 +23,7 @@ export class LoginComponent {
     this.authenticationService.login(form.value).subscribe(
       (res) => {
         localStorage.setItem('accessToken',JSON.parse(JSON.stringify(res)).accessToken);
+        localStorage.setItem('Caballero', '¿Como esta usted?')
         this.router.navigateByUrl('/animal');
       }
     );
