@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'webzoologicogr120241'`, () => {
+  it(`should have as title 'webzoologico'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('webzoologicogr120241');
+    expect(app.title).toEqual('webzoologico');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, webzoologicogr120241');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('webzoologico app is running!');
   });
 });
