@@ -4,12 +4,12 @@
     "secure": false,
     "changeOrigin": false
   },
-  "/api/login": {
+  "/api2/login": {
     "target": "http://localhost:3000",
     "secure": false,
     "changeOrigin": false
   },
-  "/api/signup": {
+  "/api2/signup": {
     "target": "http://localhost:3000",
     "secure": false,
     "changeOrigin": false
